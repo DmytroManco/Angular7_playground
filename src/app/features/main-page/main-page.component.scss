@@ -1,0 +1,14 @@
+.main-page {
+  display: flex;
+  .left-sidebar, .right-sidebar {
+    flex: 1;
+  }
+  .right-sidebar {
+    text-align: center;
+  }
+  .main-content {
+    flex: 2;
+    margin: 0 2rem;
+    text-align: center;
+  }
+}
