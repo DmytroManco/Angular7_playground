@@ -15,6 +15,7 @@
       position: relative;
       .collapse__menu {
         position: absolute;
+        z-index: 1000;
         top: 2.2rem;
         left: 0rem;
         background: white;
