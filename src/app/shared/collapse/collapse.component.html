@@ -1,0 +1,25 @@
+<div class="collapse-container">
+  <div class="collapse__header">
+    <div class="collapse__icon collapse__setting" (click)="toggleMenu()">
+      <i class="material-icons">
+        settings
+      </i>
+      <div class="collapse__menu" *ngIf="showMenu">
+        <div class="menu__item" (click)="onHide()">Hide</div>
+        <div class="menu__item" (click)="onMinimize()">Minimize</div>
+        <div class="menu__item" (click)="onMaximize()">Maximize</div>
+      </div>
+    </div>
+    <div class="collapse__title" (click)="toggleContent()">{{title}}</div>
+    <div class="collapse__icon collapse__{{type}}">
+      <i class="material-icons" *ngIf="type === 'edit'">
+        edit
+      </i>
+      <i class="material-icons" *ngIf="type === 'search'">
+        search
+      </i>
+    </div>
+  </div>
+
+  <ng-content *ngIf="!collapse"></ng-content>
+</div>

@@ -1,0 +1,32 @@
+.collapse-container {
+  min-width: 300px;
+  max-width: 100%;
+  background: #DCDBDA;
+  .collapse__header {
+    background: #345A70;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    > div {
+      padding: .5rem;
+      cursor: pointer;
+    }
+    .collapse__setting {
+      position: relative;
+      .collapse__menu {
+        position: absolute;
+        top: 2.2rem;
+        left: 0rem;
+        background: white;
+        color: #000;
+        .menu__item {
+          padding: .2rem .4rem;
+          font-size: .8rem;
+          &:hover {
+            background-color: #DCDBDA;
+          }
+        }
+      }
+    }
+  }
+}

@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CollapseComponent } from './shared/collapse/collapse.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CollapseComponent
   ],
   imports: [
     BrowserModule,
