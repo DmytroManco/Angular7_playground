@@ -1,9 +1,14 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
+import { slideIn } from '../animations/animation';
+
 @Component({
   selector: 'app-collapse',
   templateUrl: './collapse.component.html',
-  styleUrls: ['./collapse.component.scss']
+  styleUrls: ['./collapse.component.scss'],
+  animations: [
+    slideIn
+  ]
 })
 export class CollapseComponent implements OnInit {
   @Input() collapse = true;
