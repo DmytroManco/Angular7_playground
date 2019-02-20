@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
-import { slideIn } from '../animations/animation';
+import { slideIn } from '../animations/';
 
 @Component({
   selector: 'app-collapse',
