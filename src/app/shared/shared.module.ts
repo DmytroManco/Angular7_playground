@@ -1,16 +1,20 @@
 import { NgModule } from '@angular/core';
-import { CollapseComponent } from './collapse/';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { CollapseComponent } from './collapse/';
+import { ClickOutsideDirective } from './directives/click-outside';
 
 @NgModule({
   imports: [
     BrowserAnimationsModule
   ],
   declarations: [
-    CollapseComponent
+    CollapseComponent,
+    ClickOutsideDirective,
   ],
   exports: [
-    CollapseComponent
+    CollapseComponent,
+    ClickOutsideDirective
   ]
 })
 export class SharedModule {}

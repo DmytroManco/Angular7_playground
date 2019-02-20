@@ -1,6 +1,9 @@
 <div class="collapse-container">
   <div class="collapse__header">
-    <div class="collapse__icon collapse__setting" (click)="toggleMenu()">
+    <div class="collapse__icon collapse__setting"
+         appClickOutside
+         (click)="toggleMenu()"
+         (clickOutside)="hideMenu()">
       <i class="material-icons">
         settings
       </i>
@@ -10,7 +13,11 @@
         <div class="menu__item" (click)="onMaximize()">Maximize</div>
       </div>
     </div>
-    <div class="collapse__title" (click)="toggleContent()">{{title}}</div>
+
+    <div class="collapse__title" (click)="toggleContent()">
+      {{title}}
+    </div>
+
     <div class="collapse__icon collapse__{{type}}">
       <i class="material-icons" *ngIf="type === 'edit'">
         edit

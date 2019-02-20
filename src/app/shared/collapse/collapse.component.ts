@@ -27,6 +27,10 @@ export class CollapseComponent implements OnInit {
     this.showMenu = !this.showMenu;
   }
 
+  hideMenu() {
+    this.showMenu = false;
+  }
+
   toggleContent() {
     this.collapse = !this.collapse;
   }
